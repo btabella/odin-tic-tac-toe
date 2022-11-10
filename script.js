@@ -24,8 +24,8 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
-const playerSelection = prompt("Welcome! Start the game by either picking rock, paper, or scissors")
+const playerSelection = prompt("Welcome! Start the game by either picking rock, paper, or scissors").toLowerCase();
 
-const computerSelection = getComputerChoice()
+const computerSelection = getComputerChoice();
 
-alert (playRound)
+alert (playRound);
