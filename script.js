@@ -28,4 +28,4 @@ const playerSelection = prompt("Welcome! Start the game by either picking rock, 
 
 const computerSelection = getComputerChoice();
 
-console.log(playRound(playerSelection, computerSelection));
+alert(playRound(playerSelection, computerSelection));
