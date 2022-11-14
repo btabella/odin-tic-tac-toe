@@ -35,10 +35,16 @@ for (let i = 0; i < 5; i++) {
     
     alert(playRound(playerSelection, computerSelection));
 
-    if (playRound == "You win! Rocks beats Scissors" || playRound == "You win! Paper beats Rock" || playRound == "You win! Scissors beat Paper") {
+    if (playRound(playerSelection, computerSelection) == "You win! Rocks beats Scissors" || playRound(playerSelection, computerSelection) == "You win! Paper beats Rock" || playRound(playerSelection, computerSelection) == "You win! Scissors beat Paper") {
         playerScore++;
     } else {
         computerScore++;
     }
 }
+
+
+
+
 // tackle the "keeps score and reports a winner or loser at the end". use alert perhaps?
+
+// it keeps showing 5 in console log why??
