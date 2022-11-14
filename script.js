@@ -10,9 +10,11 @@ function getComputerChoice() {
     };
 }
 
+let playerScore = 0;
+let computerScore = 0;
+
 
 for (let i = 0; i < 5; i++) {
-
     function playRound(playerSelection, computerSelection) {
         if (playerSelection === computerSelection) {
             return `It's a tie! You both picked ${playerSelection}`;
@@ -33,7 +35,10 @@ for (let i = 0; i < 5; i++) {
     
     alert(playRound(playerSelection, computerSelection));
 
+    if (playRound == "You win! Rocks beats Scissors" || playRound == "You win! Paper beats Rock" || playRound == "You win! Scissors beat Paper") {
+        playerScore++;
+    } else {
+        computerScore++;
+    }
 }
-
-// tackle the "keeps score and reports a winner or loser at the end"
-
+// tackle the "keeps score and reports a winner or loser at the end". use alert perhaps?
