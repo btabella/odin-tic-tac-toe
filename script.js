@@ -42,9 +42,14 @@ for (let i = 0; i < 5; i++) {
     }
 }
 
+function endResult() {
+    if (playerScore > computerScore) {
+        return `The game is over and you win! You scored ${playerScore} points while your opponent scored ${computerScore} points`;
+    } else if (playerScore < computerScore) {
+        return `The game is over and you lose! You scored ${playerScore} points while your opponent scored ${computerScore} points`;
+    } else {
+        return `The game is over and nobody wins! You scored ${playerScore} points while your opponent scored ${computerScore} points`;
+    }
+}
 
-
-
-// tackle the "keeps score and reports a winner or loser at the end". use alert perhaps?
-
-// it keeps showing 5 in console log why??
+alert (endResult());
